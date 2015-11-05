@@ -8,7 +8,8 @@ on run argv
       set docHeight to its height
 
       tell slide lastIndex
-        make new image with properties { opacity: 80, file: theImage, width: docWidth - 180, position: { 90, 240 } }
+        -- make new image with properties { opacity: 80, file: theImage, width: docWidth - 180, position: { 90, 240 } }
+        make new shape with properties { color: (0,0,0), opacity: 80, height: docHeight - 280, width: docWidth - 180, position: { 90, 240 } }
       end tell
     end tell
   end tell
